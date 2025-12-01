@@ -1,2 +1,2 @@
-# intro-to-comp-web
-introduction to computing finals website
+# Introduction To Computing Final Project
+Personal Website Final Output
