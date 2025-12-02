@@ -192,16 +192,6 @@ var AlbumScroll = /*#__PURE__*/function (_Component) {
 
         _this4.navigation.removeCopy();
       };
-
-      this.swup.preloadPage(url).then(function (e) {
-        data = e;
-        if (animComplete) replacePage();
-      });
-      setTimeout(function () {
-        // this.swup.loadPage({url: url,  customTransition: '' });
-        animComplete = true;
-        if (data != null) replacePage();
-      }, 700);
     }
   }, {
     key: "animate",
@@ -6248,7 +6238,7 @@ var Swup = function () {
 
     this.use = _plugins.use;
     this.unuse = _plugins.unuse;
-    this.findPlugin = _plugins.findPlugin; // enable swup
+
 
     this.enable();
   }

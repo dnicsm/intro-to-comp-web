@@ -4,8 +4,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>Dani's Personal Website</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="M_yRk6d99hk4fo_NG2d7yGZcRg26zebG7VOhL8crkKI" name="google-site-verification"/>
+
         <link href="min.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript">
             !function(o, c) {
@@ -15,8 +14,7 @@
                 ("ontouchstart"in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
             }(window, document);
         </script>
-        <link href="https://cdn.prod.website-files.com/64591e5db836f60c02bb97e9/6703ea4bbff5d08293f4cd11_32x32_Favicon.svg" rel="shortcut icon" type="image/x-icon"/>
-        <link href="https://cdn.prod.website-files.com/64591e5db836f60c02bb97e9/6703ea5073dcdead0eef425d_256x256_Favicon.svg" rel="apple-touch-icon"/>
+
         <meta name="theme-color" content="#000">
         <meta name="theme-color" content="#000" media="(prefers-color-scheme: light)">
         <meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)">
@@ -898,6 +896,15 @@ window.onpageshow = function(e) {
         window.location.reload();
     }
 };
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", (e) => {
+            e.stopImmediatePropagation();
+        }, { capture: true });
+    });
+});
 </script>
 
     </body>

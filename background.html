@@ -23,10 +23,6 @@
 </head>
 <body>
 <style>
-    html.loading, html.loading body{
-        overflow: hidden;
-        display: none;
-    }
 
     .pl{
         position: fixed;
@@ -160,7 +156,7 @@
 
         <div class="nav__links">
               
-                      <a href="./index.html" class="link nav__link underLink">
+                      <a href="/index.html" class="link nav__link underLink">
             <span>Go Back</span>
         </a>
     
@@ -292,7 +288,27 @@
   <div class=""></div>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
   <script type="text/javascript" src="script.js"></script>
+<script>
+document.documentElement.classList.remove("loading");
+document.body.classList.remove("loading");
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.documentElement.classList.add("is-ready");
+});
 
 
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", (e) => {
+            e.stopImmediatePropagation();
+        }, { capture: true });
+    });
+});
+</script>
 </body>
 </html>
